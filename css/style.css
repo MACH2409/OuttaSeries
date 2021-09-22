@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1A1F1F;
+    background-color: #fef6e6;
+}

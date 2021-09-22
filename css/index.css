@@ -1,0 +1,94 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(225px,1fr));
+    padding: 20px;
+    grid-gap: 50px;
+}
+.card{
+    background-color: #fc8575;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+    height:300px;
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.card1>.container:after{
+    background-image: linear-gradient(
+            135deg,
+            #0100ec,
+            #fb36f4
+    );
+}
+.card2>.container:after{
+    background-image: linear-gradient(
+            135deg,
+            #2bdce3,
+            #42ffdb
+    );
+}
+.card3>.container:after{
+    background-image: linear-gradient(
+            135deg,
+            #ffab1d,
+            #f8501c
+    );
+}
+.card4>.container:after{
+    background-image: linear-gradient(
+            135deg,
+            red,
+            #f8501c
+    );
+}
+.details{
+    padding: 10px 15px;
+}
+.details>h3{
+    color: #1A1F1F;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    font-family: Kairos Sans W1G ExtraBold;
+}
+.details>h4{
+    color: #1A1F1F;
+    font-weight: 400;
+    font-size: 16px;
+     font-family: 'Rajdhani', sans-serif;
+}
+.details>p{
+    color: #1A1F1F;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.link-side{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #FC8575;
+    border-radius: 0 0 20px 20px;
+     font-family: 'Rajdhani', sans-serif;
+}
+
+.link-side a{
+    margin: 18px;
+    text-decoration: none;
+    color: #1A1F1F;
+}

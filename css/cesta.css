@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    margin: 3rem;
+}
+
+.grid > span {
+    padding: 8px 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+body{
+     font-family: 'Rajdhani', sans-serif;
+}
